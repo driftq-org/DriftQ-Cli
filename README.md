@@ -1,4 +1,4 @@
-# driftq-cli
+# DriftQ-Cli
 
 > **Public** — developer CLI for DriftQ.
 
