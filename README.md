@@ -2,7 +2,7 @@
 
 > **Public** — developer CLI for DriftQ.
 
-A small, dependency-free Go CLI to manage the DriftQ broker and do quick produce/consume tests.  
+A small, dependency-free Go CLI to manage the DriftQ broker and do quick produce/consume tests.
 Initial implementation calls **stubs** so you can wire the real broker/admin APIs later without breaking the UX.
 
 ## Install (local build)
