@@ -1,3 +1,3 @@
-module github.com/BehnamAxo/driftq-cli
+module github.com/driftq-org/DriftQ-Cli
 
 go 1.25.4
