@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/BehnamAxo/driftq-cli/pkg/cli"
+	"github.com/driftq-org/DriftQ-Cli/pkg/cli"
 )
 
 func main() {

@@ -7,7 +7,7 @@ Initial implementation calls **stubs** so you can wire the real broker/admin API
 
 ## Install (local build)
 ```bash
-git clone https://github.com/BehnamAxo/driftq-cli.git
+git clone https://github.com/driftq-org/DriftQ-Cli.git
 cd driftq-cli
 make install    # installs 'driftq' into your $GOBIN
 ```

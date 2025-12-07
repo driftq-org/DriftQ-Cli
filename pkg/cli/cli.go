@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/BehnamAxo/driftq-cli/pkg/driftqclient"
+	"github.com/driftq-org/DriftQ-Cli/pkg/driftqclient"
 )
 
 const defaultAddr = "localhost:9090"
@@ -43,17 +43,17 @@ func Run(args []string) error {
 // TODO: Test this Behnam
 func printHelp() {
 	fmt.Println(`driftq CLI
-Usage:
-  driftq health [--addr HOST:PORT]
-  driftq topic create <name> [--partitions N] [--compacted] [--addr HOST:PORT]
-  driftq topic list [--addr HOST:PORT]
-  driftq produce <topic> [--key K] [--value V|--file PATH] [--addr HOST:PORT]
-  driftq consume <topic> --group G [--from latest|earliest] [--addr HOST:PORT]
-  driftq lag <topic> [--group G] [--addr HOST:PORT]
+	Usage:
+		driftq health [--addr HOST:PORT]
+		driftq topic create <name> [--partitions N] [--compacted] [--addr HOST:PORT]
+		driftq topic list [--addr HOST:PORT]
+		driftq produce <topic> [--key K] [--value V|--file PATH] [--addr HOST:PORT]
+		driftq consume <topic> --group G [--from latest|earliest] [--addr HOST:PORT]
+		driftq lag <topic> [--group G] [--addr HOST:PORT]
 
-Notes:
-  - This CLI talks to the broker at --addr. Current build uses stub calls until the admin/produce APIs are live.
-`)
+	Notes:
+		- This CLI talks to the broker at --addr. Current build uses stub calls until the admin/produce APIs are live.
+	`)
 }
 
 func newClient(addr string) *driftqclient.Client {
@@ -82,7 +82,7 @@ func cmdHealth(args []string) error {
 
 func cmdTopic(args []string) error {
 	if len(args) == 0 {
-		return errors.New("usage: driftq topic [create|list] ...")
+		return errors.New("usage: driftq topic [create|list]")
 	}
 	switch args[0] {
 	case "create":
